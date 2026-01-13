@@ -1,52 +1,71 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
+  font-family: Arial, sans-serif;
   background: #f4f4f4;
 }
 
-header {
+.app-header {
   background: #2c2c2c;
-  color: white;
-  padding: 10px;
-}
-
-header h2 {
-  margin: 0 0 8px 0;
-}
-
-nav button {
-  margin: 4px;
-  padding: 8px 12px;
-  border: none;
-  background: #444;
-  color: white;
-  cursor: pointer;
-}
-
-nav button:hover {
-  background: #666;
-}
-
-main {
+  color: #fff;
   padding: 12px;
+  text-align: center;
+}
+
+.section {
+  display: none;
+  padding: 16px;
+}
+
+.section.active {
+  display: block;
 }
 
 .card {
-  background: white;
-  padding: 12px;
-  margin-bottom: 12px;
+  background: #fff;
+  padding: 16px;
   border-radius: 6px;
+  margin-bottom: 16px;
 }
 
-input, select, textarea, button {
+button {
   width: 100%;
-  padding: 8px;
-  margin-top: 6px;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 16px;
 }
 
-button.primary {
-  background: #0a7;
-  color: white;
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  background: #2c2c2c;
+}
+
+.bottom-nav button {
+  flex: 1;
   border: none;
-  margin-top: 10px;
+  background: #2c2c2c;
+  color: #fff;
+  padding: 14px;
+}
+
+/* LEDGER STATUS */
+
+.ledger-status {
+  padding: 10px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.ledger-empty {
+  background: #ffe5e5;
+  color: #a40000;
+}
+
+.ledger-loaded {
+  background: #e6ffe6;
+  color: #006600;
 }
