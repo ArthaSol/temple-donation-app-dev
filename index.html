@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Temple Donation App</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h2>Temple Donation App</h2>
+  <nav>
+    <button onclick="nav('home')">Home</button>
+    <button onclick="nav('add')">Add Entry</button>
+    <button onclick="nav('entries')">Entries</button>
+    <button onclick="nav('reports')">Reports</button>
+    <button onclick="nav('backup')">Backup</button>
+  </nav>
+</header>
+
+<main id="view"></main>
+
+<!-- Libraries -->
+<script src="libs/xlsx.full.min.js"></script>
+<script src="libs/jspdf.umd.min.js"></script>
+<script src="libs/jspdf.plugin.autotable.min.js"></script>
+<script src="libs/jszip.min.js"></script>
+
+<!-- App Scripts -->
+<script src="js/utils.js"></script>
+<script src="js/excel.js"></script>
+<script src="js/entries.js"></script>
+<script src="js/reports.js"></script>
+<script src="js/receipts.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
